@@ -1,0 +1,8 @@
+{
+    "simple_crash_menu.title": "Game Crashed!",
+    "simple_crash_menu.exception": "Your game crashed due to %s",
+    "simple_crash_menu.thread": "Thread: %s",
+    "simple_crash_menu.crash_report": "Click following link to open full Crash Report: ",
+    "simple_crash_menu.screen": "This Screen is provided by Simple Crash Menu.",
+    "simple_crash_menu.message": "As it is installed, you can keep playing despite the crash."
+}

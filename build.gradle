@@ -1,0 +1,73 @@
+buildscript {
+    repositories {
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+}
+
+apply plugin: 'org.spongepowered.mixin'
+
+group = mod_group_id
+version = mod_version
+base.archivesName = mod_name+"-Forge-"+minecraft_version
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+sourceSets {
+    main {
+        java.srcDir "src/${minecraft_version}/java"
+        resources.srcDir "src/${minecraft_version}/resources"
+    }
+    test {
+        java.setSrcDirs([])
+        resources.setSrcDirs([])
+    }
+}
+
+minecraft {
+    mappings channel: "official", version: minecraft_version
+    copyIdeResources = true
+    runs {
+        configureEach {
+            workingDirectory file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            jvmArgs "-Dmixin.env.disableRefMap=true"
+
+            mods {
+                "${mod_id}" {
+                    sources sourceSets as List
+                }
+            }
+        }
+
+        client {
+            property 'forge.enabledGameTestNamespaces', mod_id
+        }
+    }
+
+    accessTransformer file("src/${minecraft_version}/resources/META-INF/accesstransformer.cfg")
+}
+
+mixin {
+    add sourceSets.main, "${mod_id}.refmap.json"
+    config "${mod_id}.mixins.json"
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    annotationProcessor 'org.spongepowered:mixin:0.8.7:processor'
+    implementation 'org.spongepowered:mixin:0.8.7'
+}
+
+processResources.filesMatching("META-INF/mods.toml") {expand project.properties as Map}
+
+jar.finalizedBy("reobfJar")

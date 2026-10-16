@@ -1,0 +1,9 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "admsgenter.simple_crash_menu.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "refmap": "simple_crash_menu.refmap.json",
+    "client": [ "CrashReportCategoryMixin", "CrashReportMixin", "MainMixin", "MinecraftMixin", "ReportedExceptionMixin" ],
+    "injectors": { "defaultRequire": 1 }
+}

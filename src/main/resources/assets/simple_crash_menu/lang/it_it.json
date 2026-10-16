@@ -1,0 +1,8 @@
+{
+    "simple_crash_menu.title": "Gioco crashato!",
+    "simple_crash_menu.exception": "Il tuo gioco è crashato a causa di %s",
+    "simple_crash_menu.thread": "Thread: %s",
+    "simple_crash_menu.crash_report": "Clicca sul seguente link per aprire il rapporto di crash completo: ",
+    "simple_crash_menu.screen": "Questa schermata è fornita da Simple Crash Menu.",
+    "simple_crash_menu.message": "Dato che è installato, puoi continuare a giocare nonostante il crash."
+}

@@ -1,0 +1,8 @@
+{
+    "simple_crash_menu.title": "게임이 충돌했습니다!",
+    "simple_crash_menu.exception": "%s(으)로 인해 게임이 충돌했습니다",
+    "simple_crash_menu.thread": "스레드: %s",
+    "simple_crash_menu.crash_report": "다음 링크를 클릭하여 전체 충돌 보고서를 여십시오: ",
+    "simple_crash_menu.screen": "이 화면은 Simple Crash Menu에서 제공합니다.",
+    "simple_crash_menu.message": "이 모드가 설치되어 있으므로 충돌에도 불구하고 계속 플레이할 수 있습니다."
+}
