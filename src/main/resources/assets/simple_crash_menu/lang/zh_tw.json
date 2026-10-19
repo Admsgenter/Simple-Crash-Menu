@@ -1,0 +1,8 @@
+{
+    "simple_crash_menu.title": "遊戲當機了！",
+    "simple_crash_menu.exception": "你的遊戲因為%s當機了。",
+    "simple_crash_menu.thread": "拋出例外的執行緒: %s",
+    "simple_crash_menu.crash_report": "點擊下面的連結開啟完整的當機報告: ",
+    "simple_crash_menu.screen": "這個畫面由Simple Crash Menu提供。",
+    "simple_crash_menu.message": "由於你安裝了這個模組，你可以繼續遊玩，無需重新啟動遊戲。"
+}

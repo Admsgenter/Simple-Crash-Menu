@@ -1,0 +1,8 @@
+{
+    "simple_crash_menu.title": "¡El juego se ha bloqueado!",
+    "simple_crash_menu.exception": "Tu juego se ha bloqueado debido a %s",
+    "simple_crash_menu.thread": "Hilo: %s",
+    "simple_crash_menu.crash_report": "Haz clic en el siguiente enlace para abrir el informe de bloqueo completo: ",
+    "simple_crash_menu.screen": "Esta pantalla es proporcionada por Simple Crash Menu.",
+    "simple_crash_menu.message": "Como está instalado, puedes seguir jugando a pesar del bloqueo."
+}

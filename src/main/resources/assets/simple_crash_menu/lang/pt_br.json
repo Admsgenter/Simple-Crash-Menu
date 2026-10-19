@@ -1,0 +1,8 @@
+{
+    "simple_crash_menu.title": "O jogo travou!",
+    "simple_crash_menu.exception": "Seu jogo travou devido a %s",
+    "simple_crash_menu.thread": "Thread: %s",
+    "simple_crash_menu.crash_report": "Clique no link a seguir para abrir o relatório de travamento completo: ",
+    "simple_crash_menu.screen": "Esta tela é fornecida pelo Simple Crash Menu.",
+    "simple_crash_menu.message": "Como ele está instalado, você pode continuar jogando apesar do travamento."
+}
