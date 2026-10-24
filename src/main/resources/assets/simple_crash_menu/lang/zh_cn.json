@@ -4,5 +4,6 @@
     "simple_crash_menu.thread": "抛出异常的线程: %s",
     "simple_crash_menu.crash_report": "点击下面的链接打开完整的崩溃报告: ",
     "simple_crash_menu.screen": "这个屏幕由Simple Crash Menu提供。",
-    "simple_crash_menu.message": "由于你安装了这个模组，你可以继续游玩，无需重启游戏。"
+    "simple_crash_menu.message": "由于你安装了这个模组，你可以继续游玩，无需重启游戏。",
+    "simple_crash_menu.back": "崩溃发生在客户端，所以你甚至可以直接回到游戏，无需退回到标题屏幕。"
 }

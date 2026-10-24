@@ -4,5 +4,6 @@
     "simple_crash_menu.thread": "Thread: %s",
     "simple_crash_menu.crash_report": "Klicke auf den folgenden Link, um den vollständigen Absturzbericht zu öffnen: ",
     "simple_crash_menu.screen": "Dieser Bildschirm wird von Simple Crash Menu bereitgestellt.",
-    "simple_crash_menu.message": "Da es installiert ist, kannst du trotz des Absturzes weiterspielen."
+    "simple_crash_menu.message": "Da es installiert ist, kannst du trotz des Absturzes weiterspielen.",
+    "simple_crash_menu.back": "Der Absturz ist clientseitig aufgetreten, du kannst also sogar ins Spiel zurückkehren, ohne zum Titelbildschirm zurückzukehren."
 }

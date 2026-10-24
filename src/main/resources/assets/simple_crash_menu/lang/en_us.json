@@ -4,5 +4,6 @@
     "simple_crash_menu.thread": "Thread: %s",
     "simple_crash_menu.crash_report": "Click following link to open full Crash Report: ",
     "simple_crash_menu.screen": "This Screen is provided by Simple Crash Menu.",
-    "simple_crash_menu.message": "As it is installed, you can keep playing despite the crash."
+    "simple_crash_menu.message": "As it is installed, you can keep playing despite the crash.",
+    "simple_crash_menu.back": "The crash occurred on client side, so you can even back to game without quiting to title."
 }

@@ -4,5 +4,6 @@
     "simple_crash_menu.thread": "Wątek: %s",
     "simple_crash_menu.crash_report": "Kliknij poniższy link, aby otworzyć pełny raport awarii: ",
     "simple_crash_menu.screen": "Ten ekran jest dostarczany przez Simple Crash Menu.",
-    "simple_crash_menu.message": "Ponieważ jest zainstalowany, możesz kontynuować grę mimo awarii."
+    "simple_crash_menu.message": "Ponieważ jest zainstalowany, możesz kontynuować grę mimo awarii.",
+    "simple_crash_menu.back": "Awaracja wystąpiła po stronie klienta, więc możesz nawet wrócić do gry bez wychodzenia do ekranu tytułowego."
 }

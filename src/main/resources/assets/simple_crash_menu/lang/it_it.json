@@ -4,5 +4,6 @@
     "simple_crash_menu.thread": "Thread: %s",
     "simple_crash_menu.crash_report": "Clicca sul seguente link per aprire il rapporto di crash completo: ",
     "simple_crash_menu.screen": "Questa schermata è fornita da Simple Crash Menu.",
-    "simple_crash_menu.message": "Dato che è installato, puoi continuare a giocare nonostante il crash."
+    "simple_crash_menu.message": "Dato che è installato, puoi continuare a giocare nonostante il crash.",
+    "simple_crash_menu.back": "Il crash si è verificato lato client, quindi puoi persino tornare al gioco senza uscire al titolo."
 }
