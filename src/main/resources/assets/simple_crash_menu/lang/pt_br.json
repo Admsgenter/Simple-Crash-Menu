@@ -4,5 +4,6 @@
     "simple_crash_menu.thread": "Thread: %s",
     "simple_crash_menu.crash_report": "Clique no link a seguir para abrir o relatório de travamento completo: ",
     "simple_crash_menu.screen": "Esta tela é fornecida pelo Simple Crash Menu.",
-    "simple_crash_menu.message": "Como ele está instalado, você pode continuar jogando apesar do travamento."
+    "simple_crash_menu.message": "Como ele está instalado, você pode continuar jogando apesar do travamento.",
+    "simple_crash_menu.back": "O travamento ocorreu no lado do cliente, então você pode até voltar ao jogo sem sair para o título."
 }

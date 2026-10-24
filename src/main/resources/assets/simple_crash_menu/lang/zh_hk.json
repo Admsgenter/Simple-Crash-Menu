@@ -4,5 +4,6 @@
     "simple_crash_menu.thread": "拋出異常的執行緒: %s",
     "simple_crash_menu.crash_report": "點擊下面的連結開啟完整的崩潰報告: ",
     "simple_crash_menu.screen": "這個畫面由Simple Crash Menu提供。",
-    "simple_crash_menu.message": "由於你安裝了這個模組，你可以繼續遊玩，無需重啟遊戲。"
+    "simple_crash_menu.message": "由於你安裝了這個模組，你可以繼續遊玩，無需重啟遊戲。",
+    "simple_crash_menu.back": "崩潰發生在客戶端，所以你甚至可以直接回到遊戲，無需退回標題畫面。"
 }

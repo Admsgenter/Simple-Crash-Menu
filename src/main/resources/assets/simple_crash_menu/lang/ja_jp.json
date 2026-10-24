@@ -4,5 +4,6 @@
     "simple_crash_menu.thread": "スレッド: %s",
     "simple_crash_menu.crash_report": "次のリンクをクリックして完全なクラッシュレポートを開きます: ",
     "simple_crash_menu.screen": "この画面は Simple Crash Menu によって提供されています。",
-    "simple_crash_menu.message": "このMODがインストールされているため、クラッシュしてもそのままプレイを続けられます。"
+    "simple_crash_menu.message": "このMODがインストールされているため、クラッシュしてもそのままプレイを続けられます。",
+    "simple_crash_menu.back": "クラッシュはクライアント側で発生したため、タイトルに戻ることなくゲームに戻ることもできます。"
 }

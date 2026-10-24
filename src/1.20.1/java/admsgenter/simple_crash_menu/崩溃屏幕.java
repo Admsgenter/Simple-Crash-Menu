@@ -10,6 +10,8 @@ import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.PlainTextButton;
 import net.minecraft.client.gui.components.StringWidget;
+import net.minecraft.client.gui.screens.GenericDirtMessageScreen;
+import net.minecraft.client.gui.screens.ProgressScreen;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
@@ -28,6 +30,7 @@ public class 崩溃屏幕 extends Screen {
     private static final Style 文件 = Style.EMPTY.applyFormat(ChatFormatting.GREEN);
     private static final Component 标题 = Component.translatable("simple_crash_menu.title");
     private static final Component 打开报告 = Component.translatable("simple_crash_menu.crash_report").setStyle(文本);
+    private static final Component 回到游戏 = Component.translatable("simple_crash_menu.back").setStyle(文本);
     private static final Component 提示信息 = Component.translatable("simple_crash_menu.message").setStyle(文本);
     private static final Component 屏幕提供 = Component.translatable("simple_crash_menu.screen").setStyle(文本);
     private final int 高度;
@@ -38,15 +41,25 @@ public class 崩溃屏幕 extends Screen {
     public 崩溃屏幕(CrashReport 崩溃报告) {
         super(标题);
         int 高度 = 添加(25, Component.translatable("simple_crash_menu.exception", 崩溃报告.getException().getClass().getName()).setStyle(文本));
-        高度 = 添加(高度, Component.translatable("simple_crash_menu.thread", Thread.currentThread().getName()).setStyle(文本));
+        高度 = 添加(高度, Component.translatable("simple_crash_menu.thread", 崩溃报告).setStyle(文本));
         高度 = 添加(高度, 打开报告);
         File 文件路径 = 崩溃报告.getSaveFile();
         Component 报告链接 = Component.literal(文件路径.getName()).setStyle(文件);
         高度 = 添加(高度, 文件按钮 = new PlainTextButton(0, 0, 字体.width(报告链接), 字体.lineHeight, 报告链接, 按钮 -> Util.getPlatform().openUri(文件路径.toURI()), 字体));
         高度 = 添加(高度, 屏幕提供);
         高度 = 添加(高度, 提示信息);
-        组件表.add(Button.builder(Component.translatable("gui.toTitle"), 按钮 -> 游戏.setScreen(null)).bounds(0, 高度 += 12, 150, 20).build());
-        组件表.add(退出按钮 = Button.builder(Component.translatable("menu.quit"), 按钮 -> 游戏.stop()).bounds(0, 高度, 150, 20).build());
+        if(游戏.level == null) {
+            组件表.add(Button.builder(Component.translatable("gui.toTitle"), 按钮 -> 游戏.setScreen(null)).bounds(0, 高度 += 12, 150, 20).build());
+            组件表.add(退出按钮 = Button.builder(Component.translatable("menu.quit"), 按钮 -> 游戏.stop()).bounds(0, 高度, 150, 20).build());
+        } else {
+            高度 = 添加(高度, 回到游戏);
+            组件表.add(Button.builder(Component.translatable("menu.returnToGame"), 按钮 -> 游戏.setScreen(null)).bounds(0, 高度 += 12, 150, 20).build());
+            组件表.add(退出按钮 = Button.builder(Component.translatable("menu.returnToMenu"), 按钮 -> {
+                游戏.level.disconnect();
+                游戏.clearLevel(游戏.isLocalServer()? new GenericDirtMessageScreen(Component.translatable("menu.savingLevel")):new ProgressScreen(true));
+                游戏.setScreen(null);
+            }).bounds(0, 高度, 150, 20).build());
+        }
         this.高度 = 高度+20;
     }
 

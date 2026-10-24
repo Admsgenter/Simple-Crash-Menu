@@ -4,5 +4,6 @@
     "simple_crash_menu.thread": "Thread : %s",
     "simple_crash_menu.crash_report": "Cliquez sur le lien suivant pour ouvrir le rapport de plantage complet : ",
     "simple_crash_menu.screen": "Cet écran est fourni par Simple Crash Menu.",
-    "simple_crash_menu.message": "Comme il est installé, vous pouvez continuer à jouer malgré le plantage."
+    "simple_crash_menu.message": "Comme il est installé, vous pouvez continuer à jouer malgré le plantage.",
+    "simple_crash_menu.back": "Le plantage s'est produit côté client, vous pouvez donc même revenir au jeu sans quitter vers le titre."
 }
